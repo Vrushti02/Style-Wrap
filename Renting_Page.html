@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style&Wrap</title>
+    <link rel="stylesheet" href="style_rent.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="product.js"></script>
+    <script src="https://kit.fontawesome.com/35c934d717.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="header1">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="Style&Wrap-logos_black.png" width="150px">
+        </div>
+        
+        <nav>
+           
+            <ul id="MenuItems">
+                <li><i class="fa fa-search"></i><input type="text" name="" id="find" placeholder=" Search Here.." onkeyup="search()"></li>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="product.html">Clothing</a></li>
+                <li> <a href="http://localhost:8501/">Recommendation</a></li>
+                <li> <a href="Renting_Page.html">Renting</a></li>
+                <li> <a href="gift.html">Gifts</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="account.html">Account</a></li>
+                
+            </ul>
+          </nav>
+          <a href="index.html"><img src="cart.png" alt="" width="30px" height="30px"></a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+</div>  
+</div>
+</div>
+    
+
+<div class="small-container">
+    <div class=" row-2">
+        <i class="fa fa-upload" style="font-size:36px"></i><input type="file" name="uploadfile" id="img" style="display:none;"/>
+        <label for="img">Click here to upload product</label>
+        
+        
+        <!-- call function when user selects sort by price -->
+        <button id="sorted" class="sort_price" onclick="sortByPrice()">Sort by Price</button>
+        <!-- <select id="sorted">
+            <option>Default Sorting</option>
+            <option>Sort by Price</option>
+            <option>Sort by Popularity</option>
+            <option>Sort by Rating</option>
+            <option>Sort by Sale</option>
+        </select> -->
+        <p style="margin-top: 40px;font-family: 'Times New Roman', Times, serif; font-size: 20px;">Following Are the Available Products </p>
+    </div>
+    <div class="row" id="parentdiv">
+        <div class="col-4">
+            <img src="Top.jpeg">
+            <h4>Top</h4>
+            <div class="rating">
+              
+            </div>
+            <p> Rs 500</p>
+        </div>
+        <div class="col-4">
+            <img src="White Dress.jpg">
+            <h4> White dress</h4>
+            <div class="rating">
+              
+            </div>
+            <p> Rs 900</p>
+        </div>
+        <div class="col-4">
+            <img src="Gem bracelet.jpg">
+            <h4>gem bracelet</h4>
+            <div class="rating">
+               
+            </div>
+            <p> Rs 1600</p>
+        </div>
+        <div class="col-4">
+            <img src="leather jacket.jpg">
+            <h4>leather jacket</h4>
+            <div class="rating">
+                
+            </div>
+            <p>Rs 2002 </p>
+        </div>
+        <div class="col-4">
+            <img src="set of jeans.jpg">
+            <h4>set of jeans</h4>
+            <div class="rating">
+               
+            </div>
+            <p> Rs 1349</p>
+        </div>
+        <div class="col-4">
+            <img src="black purse.jpg">
+            <h4> Black purse</h4>
+            <div class="rating">
+              
+            </div>
+            <p> Rs 870</p>
+        </div>
+        <div class="col-4">
+            <img src="blue grey sweater.jpg">
+            <h4> black-grey sweater</h4>
+            <div class="rating">
+
+            </div>
+            <p> Rs 1200</p>
+        </div>
+        <div class="col-4">
+            <img src="black tshirt.jpg">
+            <h4>blue T-shirt</h4>
+            <div class="rating">
+             
+            </div>
+            <p>Rs 300 </p>
+        </div>
+    
+        <div class="col-4">
+            <img src="blue jeans.jpg">
+            <h4>blue jeans</h4>
+            <div class="rating">
+               
+            </div>
+            <p> Rs 1500</p>
+        </div>
+        <div class="col-4">
+            <img src="Blue_white_top.jpg">
+            <h4> Blue-white top</h4>
+            <div class="rating">
+                
+            </div>
+            <p>  Rs 700</p>
+        </div>
+        <div class="col-4">
+            <img src="black tshirt.jpg">
+            <h4>Black T-shirt</h4>
+            <div class="rating">
+               
+            </div>
+            <p> Rs 344</p>
+        </div>
+        <div class="col-4">
+            <img src="multi_colour_purse.jpg">
+            <h4>multi-color purse</h4>
+            <div class="rating">
+              
+            </div>
+            <p> Rs 790 </p>
+        </div>
+    
+</div>
+<div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8594</span>
+</div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3> Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+            <div class="app">
+                <img src="play-store.png">
+                <img src="app-store.png">
+            </div>
+            </div>
+            <div class="footer-col-2">
+         <img src="Style&Wrap-logos_black.png">
+         <p>Our Purpose Is to sustainably Make the Pleasure  and 
+            Benefits of Sports Accessible to the Many.
+         </p>       
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog</li>
+                <li> Return Policy </li>
+                <li> Join Affiliate</li>
+              </ul>  
+              
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+              </ul>  
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 -Style&Wrap</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+function search() {
+let filter = document.getElementById('find').value.toUpperCase();
+let item = document.querySelectorAll('.col-4');
+let l = document.getElementsByTagName('h4');
+for(var i = 0;i<=l.length;i++){
+let a=item[i].getElementsByTagName('h4')[0];
+let value=a.innerHTML || a.innerText || a.textContent;
+if(value.toUpperCase().indexOf(filter) > -1) {
+item[i].style.display="";
+}
+else
+{
+item[i].style.display="none";
+}
+}
+}
+</script>
+<!-- <script>
+
+
+
+
+
+
+
+
+    // Get the select element
+    const select = document.querySelector("#sorted");
+  
+    // Add an event listener to the select element
+    select.addEventListener("change", function() {
+      // Get the selected option value
+      const selectedOption = this.value;
+  
+      // Check if the selected option is "Sort by Price"
+      if (selectedOption === "Sort by Price") {
+        // Get the parent container element
+        const parent = document.querySelector("#parentdiv");
+  
+        // Get all the child elements (products) in the parent container
+        const children = Array.from(parent.children);
+  
+        // Sort the children array by price
+        children.sort((a, b) => {
+          const priceA = parseInt(a.querySelector("p").textContent.replace("Rs ", ""));
+          const priceB = parseInt(b.querySelector("p").textContent.replace("Rs ", ""));
+          return priceA - priceB;
+        });
+  
+        // Remove all the child elements from the parent container
+        children.forEach(child => parent.removeChild(child));
+  
+        // Append the sorted children to the parent container
+        children.forEach(child => parent.appendChild(child));
+      }
+    });
+  </script> -->
+  
+  
+</body>
+</html>

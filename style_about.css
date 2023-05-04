@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+body{
+    background:radial-gradient( #fff,#ffd6d6);
+    margin:0;
+    padding: 0;
+}
+.logo{
+    border-radius: 17px;
+}
+.containner{
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:20;
+}
+.title{
+    margin:0;
+    padding-top: 0;
+    box-sizing: border-box;
+    }
+    .navbar
+    {
+        display: flex;
+        align-items: center;
+        padding:20px;
+    }
+    nav{
+        flex:1;
+        text-align: right;
+    }
+    nav ul{
+        display: inline-block;
+        list-style-type: none;
+    }
+    nav ul li{
+        display: inline-block;
+         margin-right: 20px;
+    }
+
+    a{
+        color:#555;
+        text-decoration:none;
+    }
+.section{ width: 100%; min-height: 100vh; 
+    background-color: #ddd;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+.container{ width: 80%; display: block;
+     margin:auto; padding-top: 100px;
+    }
+     .content-section{ float: left;
+         width: 55%; font-size:15px;
+        }
+     .image-section{ float: right;
+         width: 40%;margin-right:1px;
+         margin-left:10px;
+        }
+     .image-section img{ width: 100%; 
+        height: auto;
+        margin-right:1px;
+        margin-left:35px;
+    }
+
+.content-section .title{ text-transform: uppercase;}
+
+
+.content-section.content h4{ margin-top: 20px; color:#ba0b0b;}
+.content-section.content pre{ margin-top: 10px; font-family:Arial, Helvetica, sans-serif; line-height: 1.5;}
+
+.content-section.social{ margin: 40px 40px;}
+.content-section.social i{ color:#a52a2a; font-size: 30px; padding:0px 10px;}
+.content-section .social i:hover{ color:#3d3d3d;}
+@media screen and (max-width: 768px){ .container{ width: 80%; display: block; margin:auto; padding-top:50px;}
+.content-section{ float:none; width:100%; display: block; margin:auto;}
+.image-section{ float:none; width:100%; }
+.image-section img{ width: 69%; height: auto; display: block ;margin-right:50%;}
+.content-section .title{ text-align: center; font-size: 19px;}
+.content-section .social{ text-align: center;} }

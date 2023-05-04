@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Contact us
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style_contact.css" />
+</head>
+<body>
+    <div class="header">
+        
+        <div class="containner">
+        <div class="navbar">
+            <div class="logo">
+                <img class="logo" src="Style&Wrap-logos_black.png" width="150px">
+            </div>
+            
+            <nav>
+               
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="product.html">Clothing</a></li>
+                    <li> <a href="Renting_Page.html">Renting</a></li>
+                    <li> <a href="http://localhost:8501/">Recommendation</a></li>
+                    <li> <a href="gift.html">Gifts</a></li>
+                    
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="contact.html"></a></li>
+                    <li> <a href="account.html">Account</a></li>
+                    
+                </ul>
+                <img src="cart.png" alt="cart" width="30px" height="30px">
+            </nav>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="title">
+                        <h1> Contact Us</h1>
+                    </div>
+                    <div class="content">
+                        <pre><h4>Need help with the products?
+Send us a message and we will respond as soon as possible </h4></pre>
+                        </div>
+            <form id="form1" name="form1" action="contact_feedback.php" method="POST" onsubmit="return validate()">
+                    <div class="input_box">
+                        <div class="textbox">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+
+                            <input type="text" placeholder="Name" id="Name" name="Name">
+                        </div>
+                        <div class="textbox">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+
+
+                            <input type="email" placeholder="Email" id="Email" name="Email">
+                        </div>
+                        <div>
+                            <i class="fa fa-comment" aria-hidden="true"></i>
+
+
+                            <textarea class="textbox" rows="4" cols="50"; placeholder="Message" id="Message" name="Message"></textarea>
+                        </div>
+                        <br>
+                            <input class="btn" type="submit"  value="Submit">
+                        
+                    </div>
+                </div>
+            </form>
+                <div class="image-section">
+                    <img src="contact_pic.jpg" alt="side image">
+                </div> 
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style&Wrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:wght@200;300;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="product.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   <style>
+    #find
+    {
+        
+    border:none;
+    border-bottom: 1px solid #fff;
+    background:none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-seri
+    }
+
+    .sort_price{
+    
+    
+    border:none;
+    border-bottom: 1px solid #fff;
+    background:none;
+
+}
+#sorted{
+    margin-left: 500px;
+    font-family:'Times New Roman', Times, serif;
+    border:1px #000;
+
+    background:none;
+}
+   </style>
+</head>
+    <div style="background: linear-gradient(#ffd6d6,#fff);">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="Style&Wrap-logos_black.png" width="150px">
+        </div>
+        
+        <nav>
+           
+            <ul id="MenuItems">
+                <li><i class="fa fa-search"></i><input type="text" name="" id="find" placeholder=" Search Here..." onkeyup="search()"></li>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="product.html">Clothing</a></li>
+                <li> <a href="Renting_Page.html">Renting</a></li>
+                <li> <a href="http://localhost:8501/">Recommendation</a></li>
+                <li> <a href="Gift.html">Gift</a></li>
+
+               
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="account.html">Account</a></li>
+            
+            </ul>
+          </nav>
+          <img src="cart.png" alt="" width="30px" height="30px">
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+</div>  
+</div>
+</div>
+    
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Gifts</h2>
+        <button id="sorted"  onclick="sortByPrice()">Sort by Price</button>
+     <!---  <select>
+            <option>Default Sorting</option>
+            <option>Sort by Price</option>
+            <option>Sort by Popularity</option>
+            <option>Sort by Rating</option>
+            <option>Sort by Sale</option>
+        </select>-->
+    </div>
+    <div class="row" id="parentdiv">
+        <div class="col-4">
+            <img src="category-111.jpg">
+            <h4>Lamp</h4>
+            <div class="rating">
+             
+            </div>
+            <p> Rs 300</p>
+        </div>
+        <div class="col-4">
+            <img src="gift9.png">
+            <h4> Cactus Pot</h4>
+            <div class="rating">
+               
+            </div>
+            <p> Rs 900</p>
+        </div>
+        <div class="col-4">
+            <img src="gift1.png">
+            <h4>Flower Pot</h4>
+            <div class="rating">
+              
+            </div>
+            <p>Rs 400</p>
+        </div>
+        <div class="col-4">
+            <img src="gift2.png">
+            <h4> StudyLamp</h4>
+            <div class="rating">
+             
+            </div>
+            <p>Rs 800 </p>
+        </div>
+    
+    
+        <div class="col-4">
+            <img src="gift3.png">
+            <h4>Painting</h4>
+            <div class="rating">
+              
+            </div>
+            <p> Rs 1349</p>
+        </div>
+        <div class="col-4">
+            <img src="gift4.png">
+        <h4>Flower Pot</h4>
+            <div class="rating">
+            
+            </div>
+            <p> Rs 400</p>
+        </div>
+        <div class="col-4">
+            <img src="gift5.png">
+            <h4>Flower Pot</h4>
+            <div class="rating">
+            
+            </div>
+            <p> Rs 200</p>
+        </div>
+        <div class="col-4">
+            <img src="product-8.jpg">
+            <h4>Fossil Watch</h4>
+            <div class="rating">
+            
+            </div>
+            <p>Rs 10000 </p>
+        </div>
+     
+    
+        <div class="col-4">
+            <img src="product-9.jpg">
+            <h4>Roadster Watch</h4>
+            <div class="rating">
+               
+            </div>
+            <p> Rs 1500</p>
+        </div>
+        <div class="col-4">
+            <img src="gift6.png">
+            <h4> Perfume</h4>
+            <div class="rating">
+              
+            </div>
+            <p>Rs 500</p>
+        </div>
+        <div class="col-4">
+            <img src="gift7.png">
+            <h4>Coffee and Tea Mug</h4>
+            <div class="rating">
+              
+            </div>
+            <p>  Rs 170</p>
+        </div>
+        <div class="col-4">
+            <img src="gift8.png">
+            <h4>Mug</h4>
+            <div class="rating">
+               
+            </div>
+            <p> Rs 400 </p>
+        </div>
+    
+</div>
+<div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8594</span>
+</div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3> Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+            <div class="app">
+                <img src="play-store.png">
+                <img src="app-store.png">
+            </div>
+            </div>
+            <div class="footer-col-2">
+         <img src="Style&Wrap-logos_black.png">
+         <p>Our Purpose Is to sustainably Make the Pleasure  and 
+            Benefits of Sports Accessible to the Many.
+         </p>       
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog</li>
+                <li> Return Policy </li>
+                <li> Join Affiliate</li>
+              </ul>  
+              
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+              </ul>  
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 -Style&Wrap</p>
+    </div>
+</div>
+<script type="text/javascript">
+    function search() {
+    let filter = document.getElementById('find').value.toUpperCase();
+    let item = document.querySelectorAll('.col-4');
+    let l = document.getElementsByTagName('h4');
+    for(var i = 0;i<=l.length;i++){
+    let a=item[i].getElementsByTagName('h4')[0];
+    let value=a.innerHTML || a.innerText || a.textContent;
+    if(value.toUpperCase().indexOf(filter) > -1) {
+    item[i].style.display="";
+    }
+    else
+    {
+    item[i].style.display="none";
+    }
+    }
+    }
+    </script>
+</body>
+</html>
